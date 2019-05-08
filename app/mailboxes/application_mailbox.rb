@@ -1,3 +1,4 @@
 class ApplicationMailbox < ActionMailbox::Base
-  # routing /something/i => :somewhere
+  # Let's route mail sent to sayhello@domain to the replier mailbox
+  routing /^sayhello@/i => :replier
 end
